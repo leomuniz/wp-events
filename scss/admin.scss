@@ -1,0 +1,84 @@
+.centralized {
+	text-align:center !important;
+}
+
+label.moeda, label.porcento {
+	padding: 6px 10px;
+	border: 1px solid #999;
+	background-color: #efefef;
+	border-radius: 4px;
+}
+
+input[type=date] {
+	width: 120px;
+	font-size: 12px;
+}
+
+#ingressos_table { 
+	display:none;
+	margin-bottom:20px;
+
+	tr th {
+		text-align:left;
+	}
+
+	tr td input { 
+
+		&.ingresso_id {
+			width: 35px;
+		}
+
+		&.titulo { 
+			width:280px;
+		}
+
+		&.qtd { 
+			width: 75px;
+			text-align: center;
+		}
+
+		&.preco {
+			width:70px;
+		}
+
+	}
+
+	tr.ingresso_model { 
+		display:none;
+	}
+}
+
+#adicionar_ingresso {
+	margin-top: 6px;
+}
+
+
+#descontos_table { 
+	display:none;
+	margin-bottom:20px;
+
+	tr th { 
+		text-align:left;
+	}
+
+	tr td input {
+	
+		&.qtd, &.desconto_percentual, &.desconto_absoluto {
+			width: 70px;
+		}
+
+	}
+
+	tr td select.desconto_ingressos {
+		width:280px;
+	}
+
+	tr td div.desconto_absoluto, tr.desconto_model  {
+		display:none;
+	}
+
+}
+
+#adicionar_desconto {
+	margin-top: 6px;
+}
